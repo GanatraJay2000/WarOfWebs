@@ -1,0 +1,94 @@
+/* OWL */
+.item {
+  position: relative;
+  overflow: hidden;
+  cursor: grab; }
+  .item img {
+    border-radius: 0.5em; }
+  .item:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px); }
+  .item::after {
+    cursor: pointer;
+    transition: 0.25s;
+    transform: translateX(50px);
+    opacity: 0;
+    visibility: hidden;
+    content: "\f0c1";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: #343f52;
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #f1f5fd;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.owl-dots {
+  padding: 30px 13px 0px;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 20px !important; }
+
+.owl-dot {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 20px !important;
+  height: 20px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.owl-dot span {
+  background: #D4D7DD !important;
+  height: 7px !important;
+  width: 7px !important;
+  margin: 0 !important; }
+
+.owl-dot span:hover {
+  height: 10px !important;
+  width: 10px !important; }
+
+.owl-dot.active span {
+  background-color: #fff !important;
+  height: 5px !important;
+  width: 5px !important;
+  outline: 3.25px solid #D4D7DD !important; }
+
+.owl-nav {
+  position: absolute;
+  top: 35%;
+  transform: translate(0, -50%);
+  width: 100%;
+  pointer-events: none;
+  color: #343f52; }
+
+.owl-prev, .owl-next {
+  position: absolute;
+  pointer-events: all;
+  background-color: #FEFEFE !important;
+  color: #343f52 !important;
+  height: 40px;
+  width: 40px;
+  border-radius: 50% !important;
+  cursor: pointer; }
+
+.owl-prev {
+  left: 10px; }
+
+.owl-next {
+  right: 10px; }
+
+.owl-prev:hover, .owl-next:hover {
+  background-color: #ffffff !important;
+  color: #343f52 !important; }
