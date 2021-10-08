@@ -7944,6 +7944,12 @@ body {
 .bg-color {
   background-color: #3F78E0 !important; }
 
+.text-grey {
+  color: #9BAAB9; }
+
+.bg-grey {
+  color: #9BAAB9; }
+
 .manrope {
   font-family: "Manrope", sans-serif !important; }
 
@@ -8131,6 +8137,24 @@ body {
       top: 0;
       left: 0; }
 
+.imge-container {
+  position: relative; }
+  .imge-container img {
+    width: 100%; }
+  .imge-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background-image: url("/RESOURCES/line_circle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    transform: translate(-32px, -29px);
+    top: 0;
+    left: 0; }
+
 .blue-button {
   border-radius: 50%;
   background-color: #3F78E0;
@@ -8153,3 +8177,26 @@ body {
 
 a {
   text-decoration: none; }
+
+.icon-list {
+  list-style: none;
+  column-count: 2; }
+  .icon-list li {
+    position: relative;
+    padding-left: 20px; }
+    .icon-list li::before {
+      position: absolute;
+      left: -10px;
+      top: 10px;
+      content: "\f00c";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      height: 20px;
+      width: 20px;
+      color: #3F78E0;
+      font-size: 10px;
+      background-color: #dce7f9;
+      border-radius: 50% !important;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
