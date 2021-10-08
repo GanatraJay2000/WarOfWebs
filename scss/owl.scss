@@ -50,6 +50,12 @@
     height:20px !important;
     // bottom: 27px;        
 }
+@include desktop-down{
+    .owl-dots{
+        transform: translateX(-50%);
+        margin-bottom:150px;
+    }
+}
 .owl-dot {
     outline: 0 !important;
     border: 0 !important;
@@ -87,6 +93,9 @@
     pointer-events: none;
     color:$dark;
 }
+.team .owl-nav{
+    top:30%;
+}
 .owl-prev, .owl-next{
     position: absolute;
     pointer-events: all;
@@ -106,4 +115,15 @@
 .owl-prev:hover, .owl-next:hover{
     background-color: #ffffff !important;
     color:$dark !important;
+}
+
+.team{
+    .item{
+        &::after{
+            display: none !important;
+        }
+        img{
+            border-radius: 50%;
+        }
+    }
 }

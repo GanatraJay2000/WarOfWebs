@@ -1,6 +1,7 @@
 @import './variables';
 @import './mixins';
 @import './owl';
+@import './sidebar';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap');
@@ -19,6 +20,9 @@ html,body{
 body{
     background: $bg;
     overflow-x:hidden;
+}
+html{
+    overflow-x: hidden;
 }
 .wrapper{
     max-width: 1320px !important;
@@ -62,7 +66,7 @@ body{
     }
 }
 
-.dropdown{
+:not(.sidebar) .dropdown{
     *{transition: 0.25s;}
     cursor: pointer;
     transition: 0.25s;
@@ -211,7 +215,6 @@ body{
     list-style: none;
     column-count: 3;
 }
-
 .block{
     background:#ffffff11;
     &:hover{background:#ffffff22}    
@@ -390,5 +393,44 @@ a {
     }
     100%{
         box-shadow: 0 0 0 0 rgba(62, 119, 224, 0),0 0 0 0 rgba(62, 119, 224, 0);
+    }
+}
+
+.im-container{
+    position: relative;    
+    height:100%;
+    width: 100%;
+    img{
+        position: absolute;
+        bottom:0;
+        width: 50%;
+        left:20%;
+    }
+}
+
+.jump{
+    transform: translateY(0px);
+    transition: 0.25s;    
+    &:hover{
+        transform: translateY(-3px);        
+    }
+}
+
+@include desktop-down {
+    .image-side .image-container::before{
+        display: none !important;
+    }
+    .imge-container::after{
+        display: none !important;
+    }
+    // .doc_columns{
+    //     column-count: 1;
+    // }
+    // .doc_columns_3{
+    //     column-count: 1;
+    // }
+    .icon-list{
+        column-count: 1 !important;
+        padding:10px;
     }
 }

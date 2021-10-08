@@ -9,16 +9,113 @@
     <link rel="stylesheet" href="./owl_3//owl.carousel.min.css"> 
     <link rel="stylesheet" href="./owl_3/owl.theme.default.min.css"> 
 </head>
-<body>         
-        <div class="p-3 bg-primary text-white fw-bold">
+<body>  
+    <div class="sidebar active" id="sidebar">
+        <div class="close" id="close">
+            &times;
+        </div>
+        <div class="h-100 mt-5 px-3">
+            <img class="mb-5" src="./RESOURCES//Resources/logo.png" alt="">
+            <div class="">
+                <a class="text-white" href="#" data-id="demos">Demos ></a>
+                <ul id="demos">
+                    <li>Demo I</li>
+                    <li>Demo II</li>
+                    <li>Demo III</li>
+                </ul>
+            </div> 
+            <div class="">
+                <a class="text-white" href="#" data-id="pages">Pages ></a>
+                <ul id="pages">
+                    <li>
+                       <div class="">
+                            <a class="text-white" href="#" data-id="services">Services ></a>
+                            <ul id="services">
+                                <li>Service I</li>                                
+                                <li>Service II</li>                                
+                            </ul>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="">
+                            <a class="text-white" href="#" data-id="abouts">About ></a>
+                            <ul id="abouts">
+                                <li>Service I</li>                                
+                                <li>Service II</li>                                
+                            </ul>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="">
+                            <a class="text-white" href="#" data-id="contacts">Contact ></a>
+                            <ul id="contacts">
+                                <li>Service I</li>                                
+                                <li>Service II</li>                                
+                            </ul>
+                        </div> 
+                    </li>
+                    <li>Pricing</li>
+                    <li>One Page</li>
+                </ul>
+            </div>
+            <div class="">
+                <a class="text-white" href="#" data-id="projects">Projects ></a>
+                <ul id="projects">
+                    <li>Demo I</li>
+                    <li>Demo II</li>
+                    <li>
+                        <div class="">
+                            <a class="text-white" href="#" data-id="s_projects">Single Projects ></a>
+                            <ul id="s_projects">
+                                <li>Demo I</li>
+                                <li>Demo II</li>                                
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+            <div class="">
+                <a class="text-white" href="#" data-id="blog">Blog ></a>
+                <ul id="blog">
+                    <li>Demo I</li>
+                    <li>Demo II</li>
+                    <li>
+                        <div class="">
+                            <a class="text-white" href="#" data-id="blog_p">Blog Posts ></a>
+                            <ul id="blog_p">
+                                <li>Demo I</li>
+                                <li>Demo II</li>                                
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+            <div class="">
+                <a class="text-white" href="#" data-id="blog">Blocks ></a>
+                <ul id="blog">
+                    <li>Demo I</li>
+                    <li>Demo II</li>                    
+                </ul>
+            </div> 
+            <div class="">
+                <a class="text-white" href="#" data-id="docs">Documentation ></a>
+                <ul id="docs">
+                    <li class="text-primary">Usage</li>
+                    <li>Demo I</li>
+                    <li>Demo II</li>                    
+                </ul>
+            </div> 
+        </div>
+    </div>
+    <div class="p-3 bg-primary text-white fw-bold">
             <div class="wrapper">
                 <div class="col-md-11 col-12 mx-auto d-flex justify-content-between align-items-center flex-wrap">
-                    <div class="">
+                    <div class="mb-3 mb-md-0">
                         <i class="iconify fs-4" data-icon="uil:location-pin-alt"></i>
                         Moonshine St. 14/05 Light City
                     </div>
                     <div class="d-flex flex-wrap">
-                        <div class="me-4">
+                        <div class="me-4 mb-3 mb-md-0">
                             <i class="iconify fs-4" data-icon="uil:phone-volume"></i>
                             00 (123) 456 78 90
                         </div>
@@ -31,7 +128,7 @@
             </div>
         </div>  
         <div class="wrapper">
-        <div class="mt-4 p-2">        
+        <div class="mt-4 p-2 d-none d-md-block">        
             <div class="col-md-11 px-3 col-12 mx-auto d-flex justify-content-between align-items-center flex-nowrap">
                 <div class="img-container">
                     <img src="./RESOURCES/Resources/logo.png" alt="">
@@ -387,7 +484,27 @@
                     <button class="nice_btn btn btn-primary br-xxlg text-white px-3 py-2 fw-bold">Contact</button>
                 </div>
             </div>
-        </div>  
+        </div> 
+        <div class="d-block d-md-none p-3 pt-4">
+            <div class="d-flex justify-content-between align-items-center">                
+                <img src="./RESOURCES//Resources/logo.png" alt="">
+                <div class="d-flex align-items-center">
+                    <div class="dropdown me-4">
+                        <a href="#" class="opener n_link">EN</a>
+                        <div class="droplist">
+                            <ul class="list tr">                            
+                                <li><a class="n_link" href="/">EN</a></li>
+                                <li><a class="n_link" href="/">DE</a></li>
+                                <li><a class="n_link" href="/">ES</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn shadow-none border-0" id="side_opener">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div> 
 
     
         <div class="banner mx-auto col-md-11 col-12">
@@ -416,31 +533,32 @@
         </div>
 
     
-        <div class="mx-auto col-md-11 col-12 pt-4 pb-4">
+        <div class="mx-auto col-md-11 col-12 pt-4 pb-4 p-3 ">
             <div class="row">
-                <div class="col-md-2 col-4"><div class=" sh p-md-5 p-4"><img class="w-100" src="./RESOURCES/Resources/c1.png"></div></div>
-                <div class="col-md-2 col-4"><div class=" sh p-md-5 p-4"><img class="w-100" src="./RESOURCES/Resources/c2.png"></div></div>
-                <div class="col-md-2 col-4"><div class=" sh p-md-5 p-4"><img class="w-100" src="./RESOURCES/Resources/c3.png"></div></div>
-                <div class="col-md-2 col-4"><div class=" sh p-md-5 p-4"><img class="w-100" src="./RESOURCES/Resources/c4.png"></div></div>
-                <div class="col-md-2 col-4"><div class=" sh p-md-5 p-4"><img class="w-100" src="./RESOURCES/Resources/c5.png"></div></div>
-                <div class="col-md-2 col-4"><div class=" sh p-md-5 p-4"><img class="w-100" src="./RESOURCES/Resources/c6.png"></div></div>
+                <div class="col-md-2 col-4"><div class=" sh p-md-5 p-2"><img class="w-100" src="./RESOURCES/Resources/c1.png"></div></div>
+                <div class="col-md-2 col-4"><div class=" sh p-md-5 p-2"><img class="w-100" src="./RESOURCES/Resources/c2.png"></div></div>
+                <div class="col-md-2 col-4"><div class=" sh p-md-5 p-2"><img class="w-100" src="./RESOURCES/Resources/c3.png"></div></div>
+                <div class="col-md-2 col-4"><div class=" sh p-md-5 p-2"><img class="w-100" src="./RESOURCES/Resources/c4.png"></div></div>
+                <div class="col-md-2 col-4"><div class=" sh p-md-5 p-2"><img class="w-100" src="./RESOURCES/Resources/c5.png"></div></div>
+                <div class="col-md-2 col-4"><div class=" sh p-md-5 p-2"><img class="w-100" src="./RESOURCES/Resources/c6.png"></div></div>
             </div>
         </div>
         
 
-
-        <div class="row pt-8">
-            <div class=" col-md-10 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center ">
+        <div class="p-1">
+        <div class="row pt-5 pt-md-0">
+            <div class=" col-md-10 col-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center ">
             <h2 class="fs-6 text-uppercase text-grey mb-3 fw-bold ">What We Do?</h2>
-            <h3 class="display-6  dmsd">The service we offer is specifically <br class="d-none d-md-block"> designed to meet your needs.</h3>
+            <h3 class="display-6 p-1 dmsd">The service we offer is specifically <br class="d-none d-md-block"> designed to meet your needs.</h3>
             </div>
+        </div>
         </div>
 
 
     
         <div class="mx-auto col-md-11 col-12 py-5">
             <div class="row">
-                <div class="col-md-3 col-12 text-center ">
+                <div class="col-md-3 col-12 text-center mb-4 mb-md-0">
                     <div class="p-3">
                         <button class=" btn blue-button mb-5" > <i class="iconify text-white fs-2 " data-icon="uil:phone-volume"></i> </button>
                         <h4 class="fw-bold text-dark">24/7 Support</h4>
@@ -448,7 +566,7 @@
                         <a href="#" class="learn-more">Learn More</a>
                     </div>
                 </div>
-                <div class="col-md-3 col-12 text-center ">
+                <div class="col-md-3 col-12 text-center  mb-4 mb-md-0">
                     <div class="p-3">
                         <button class=" btn blue-button mb-5" > <i class="iconify text-white fs-2" data-icon="uil:shield-exclamation"></i> </button>
                         <h4 class="fw-bold text-dark">Secure Payments</h4>
@@ -456,7 +574,7 @@
                         <a href="#" class="learn-more">Learn More</a>
                     </div>
                 </div>
-                <div class="col-md-3 col-12 text-center ">
+                <div class="col-md-3 col-12 text-center  mb-4 mb-md-0">
                     <div class="p-3 ">
                         <button class=" btn blue-button mb-5" > <i class="iconify text-white fs-3" data-icon="uil:laptop-cloud"></i> </button>
                         <h4 class="fw-bold text-dark">Daily Updates</h4>
@@ -478,14 +596,14 @@
         <div class="mx-auto col-md-11 col-12 pt-5 mb-5">
             <div class="d-flex flex-wrap flex-md-row align-items-center">
                 <div class="image2 col-md-6 col-12 text-left p-0"> 
-                    <div class="card sh p-5  border-0">
+                    <div class="card sh p-md-5 p-2  border-0">
                         <div class="imge-container">
                             <img class="banner-img" src="./RESOURCES/Resources/img2.jpg" alt="" />
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-12  p-0"> 
-                    <div class="card sh p-5 p-md-5 border-0">
+                    <div class="card sh p-md-5 p-3 p-md-5 border-0">
                         <h2 class="text-left text-md-start dmsd text-dark display-6">How It Works?</h2>
                     <p class="text-left text-md-start manrope  fs-4 text-muted fw-light mb-4 mt-2">So here are three working steps why our valued customers choose us.</p>
                     <div class="d-flex flex-row mb-6">
@@ -523,7 +641,7 @@
         <h2 class="mt-5 pt-5 fs-6 fw-bold text-uppercase mb-3 text-center text-grey text-small">Latest Projects</h2>
         <h3 class="text-center mb-5 dmsd text-dark display-6">Check out some of our awesome projects <br class="d-none d-md-block"> with creative ideas and great design.</h3>
 
-        <div class="mb-5 pb-5 px-5">
+        <div class="mb-md-5 pb-md-5 px-md-5 p-3 mb-5">
             <div class="carousel owl-carousel owl-theme">
                 <div class="item">
                     <img src="./RESOURCES/Resources/img3.jpg" alt="C1">
@@ -560,7 +678,7 @@
 
 
 
-<div class="mx-auto col-md-11 col-12 pt-5">
+<div class="my-5 py-5 p-3 mx-auto col-md-11 col-12">
     <div class="d-flex flex-wrap flex-md-row align-items-center">
         <div class="col-md-6 col-12 text-left p-0"> 
             <div class="br ime-container">
@@ -568,7 +686,7 @@
             </div>
         </div>
         <div class="col-md-6 col-12  p-0"> 
-            <div class="card sh p-5 p-md-5 border-0">                
+            <div class="card sh p-md-5 px-2 py-3 p-md-5 border-0">                               
                 <h2 class="fs-6 fw-bold text-uppercase text-grey mb-3">Who Are We?</h2>
                 <h3 class=" mb-6 dmsd text-dark display-6">Company that believes in the power of creative strategy.</h3>
                 <p class="mb-6 pt-3 text-bg">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
@@ -581,78 +699,172 @@
                             <li class="mt-3">Fermentum massa vivamus faucibus amet euismod.</span></li>
                         </ul>
                     </div>                      
-                </div>                                      
+                </div> 
             </div>
         </div>
     </div>
 </div>
+<div class="m-md-5 m-0 p-3 py-5 team">
+    <div class="d-flex flex-wrap">
+        <div class="col-md-4 col-12 mb-5 mb-md-0">
+            <h2 class="fs-6 fw-bold text-uppercase text-grey mb-3">MEET THE TEAM</h2>
+            <h3 class=" mb-6 dmsd text-dark display-6">Save your time and money by choosing our professional team.</h3>
+            <p class="mb-4 pt-3 text-bg">Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros tempus porttitor.</p>
+            <button class="nice_btn br-xxlg btn btn-primary text-white">See All Members</button>
+        </div>
+        <div class="col-md-8 col-12 d-flex align-items-center ps-4">
+            <!-- <div class=""> -->
+                <div class="carousel team-carousel owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="./RESOURCES/Resources/img10.jpg" alt="C1">
+                        <div class="text-center my-2 fs-5 fw-bold">Cory Zamora</div>
+                        <div class="text-center my-2 text-small text-grey text-uppercase">Marketing Specialist</div>
+                        <p class="m-0 text-center my-2">Etiam porta sem magna malesuada mollis.</p>
+                        <nav class="text-center">
+                            <a class="me-2" href="#"><i class="iconify mx-1 jump" data-icon="logos:twitter" style="color: #dce7f9;"></i></a>
+                            <a class="me-2" href="#"><i class="iconify text-danger" data-icon="akar-icons:slack-fill"></i></a>
+                            <a class="" href="#"><i class="iconify" data-icon="logos:linkedin-icon"></i></a>                            
+                        </nav>
+                    </div>    
+                    <div class="item">
+                        <img src="./RESOURCES/Resources/img11.jpg" alt="C1">
+                        <div class="text-center my-2 fs-5 fw-bold">Coriss Ambady</div>
+                        <div class="text-center my-2 text-small text-grey text-uppercase">Financial Analyst</div>
+                        <p class="m-0 text-center my-2">Aenean eu leo quam. Pellentesque ornare lacinia.</p>
+                        <nav class="text-center">
+                            <a class="me-2" href="#"><i class="iconify mx-1 jump" data-icon="logos:twitter" style="color: #dce7f9;"></i></a>
+                            <a class="me-2" href="#"><i class="iconify text-danger" data-icon="akar-icons:slack-fill"></i></a>
+                            <a class="" href="#"><i class="iconify" data-icon="logos:linkedin-icon"></i></a>                            
+                        </nav>
+                    </div>            
+                    <div class="item">
+                        <img src="./RESOURCES/Resources/img12.jpg" alt="C1">
+                        <div class="text-center my-2 fs-5 fw-bold">Nikolas Brooten</div>
+                        <div class="text-center my-2 text-small text-grey text-uppercase">Sales Manager</div>
+                        <p class="m-0 text-center my-2">Donec ornare elit quam porta gravida at eget.</p>
+                        <nav class="text-center">
+                            <a class="me-2" href="#"><i class="iconify mx-1 jump" data-icon="logos:twitter" style="color: #dce7f9;"></i></a>
+                            <a class="me-2" href="#"><i class="iconify text-danger" data-icon="akar-icons:slack-fill"></i></a>
+                            <a class="" href="#"><i class="iconify" data-icon="logos:linkedin-icon"></i></a>                            
+                        </nav>
+                    </div>            
+                    <div class="item">
+                        <img src="./RESOURCES/Resources/img14.jpg" alt="C1">
+                        <div class="text-center my-2 fs-5 fw-bold">Jackie Sanders</div>
+                        <div class="text-center my-2 text-small text-grey text-uppercase">Investment Planner</div>
+                        <p class="m-0 text-center my-2">Nullam risus eget urna mollis ornare vel eu leo.</p>
+                        <nav class="text-center">
+                            <a class="me-2" href="#"><i class="iconify mx-1 jump" data-icon="logos:twitter" style="color: #dce7f9;"></i></a>
+                            <a class="me-2" href="#"><i class="iconify text-danger" data-icon="akar-icons:slack-fill"></i></a>
+                            <a class="" href="#"><i class="iconify" data-icon="logos:linkedin-icon"></i></a>                            
+                        </nav>
+                    </div>            
+                    <div class="item">
+                        <img src="./RESOURCES/Resources/img15.jpg" alt="C1">
+                        <div class="text-center my-2 fs-5 fw-bold">Tina Geller</div>
+                        <div class="text-center my-2 text-small text-grey text-uppercase">Assistant Buyer</div>
+                        <p class="m-0 text-center my-2">Vivamus sagittis lacus vel augue laoreet rutrum.</p>
+                        <nav class="text-center">
+                            <a class="me-2" href="#"><i class="iconify mx-1 jump" data-icon="logos:twitter" style="color: #dce7f9;"></i></a>
+                            <a class="me-2" href="#"><i class="iconify text-danger" data-icon="akar-icons:slack-fill"></i></a>
+                            <a class="" href="#"><i class="iconify" data-icon="logos:linkedin-icon"></i></a>                            
+                        </nav>
+                    </div>                                                          
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>
+<div class="p-3 p-md-0">
+<div class="my-5 br mx-auto col-md-11 col-12 pt-5 p-3 p-md-0" style="background-color: #F1F5FD;">
+    <div class="d-flex flex-wrap flex-md-row ">
+        <div class="col-md-6 col-12 text-left p-0 d-none d-md-block"> 
+            <div class="im-container">
+                <img src="./RESOURCES/Resources/img13.png" alt="Woman">
+            </div>
+        </div>
+        <div class="col-md-5 col-12  p-0"> 
+            <div class="pb-5 border-0 text-center fs-5 text-dark">  
+                <div class="text-center mb-3">
+                    <i class="iconify text-warning" data-icon="ant-design:star-filled"></i>
+                    <i class="iconify text-warning" data-icon="ant-design:star-filled"></i>
+                    <i class="iconify text-warning" data-icon="ant-design:star-filled"></i>
+                    <i class="iconify text-warning" data-icon="ant-design:star-filled"></i>
+                    <i class="iconify text-warning" data-icon="ant-design:star-filled"></i>
+                </div>            
+                <p>“Fusce dapibus tellus ac cursus commodo, tortor mauris condimentum nibh ut fermentum massa, justo sit amet vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed”</p>
+                <h5 class="fs-6 fw-bold text-dark mt-3">Coriss Ambady</h5>
+                <p class="fs-6 fw-bold text-uppercase text-grey">Financial Analyst</p>                  
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 
-
-   <footer class="bg-light">
-    <div class="container py-3 pt-md-5 px-4 ">
+   <footer class="">
+    <div class="container py-3 pt-md-5 px-4 mb-5">
       <div class="row gy-6 ">
-        <div class="col-md-4 col-lg-3">
+        <div class="col-md-4 col-lg-3 mb-5 mb-md-0">
           <div class="widget">
             <img class="mb-4" src="./RESOURCES/Resources/logo.png" />
-            <p class="flex text-muted">© 2021 Sandbox. <br class="d-none d-md-block text-muted">All rights reserved.</p>
-            <nav class="handles">
-              <a href="#"><i class="iconify mx-1" data-icon="logos:twitter" style="color: #dce7f9;"></i></a>
-              <a href="#"><span class="iconify mx-1" data-icon="brandico:facebook" style="color: blue;"></span></a>
-              <a href="#"><i class="iconify mx-1" data-icon="icon-park-outline:dribble"style="color:violet;" ></i></a>
-              <a href="#"><i class="iconify mx-1" data-icon="akar-icons:instagram-fill" style="color: palevioletred;"></i></a>
-              <a href="#"><i class="iconify mx-1" data-icon="logos:youtube-icon" style="color: red;"></i></a>
+            <p class="flex text-muted" style="line-height: 2;">© 2021 Sandbox. <br class="d-none d-md-block text-muted">All rights reserved.</p>
+            <nav>
+              <a class="me-1" href="#"><i class="iconify mx-1 jump" data-icon="logos:twitter" style="color: #dce7f9;"></i></a>
+              <a class="me-1" href="#"><span class="iconify mx-1 jump" data-icon="brandico:facebook" style="color: blue;"></span></a>
+              <a class="me-1" href="#"><i class="iconify mx-1 jump" data-icon="icon-park-outline:dribble"style="color:violet;" ></i></a>
+              <a class="me-1" href="#"><i class="iconify mx-1 jump" data-icon="akar-icons:instagram-fill" style="color: palevioletred;"></i></a>
+              <a class="me-1" href="#"><i class="iconify mx-1 jump" data-icon="logos:youtube-icon" style="color: red;"></i></a>
             </nav>
             
           </div>
           
         </div>
 
-        <div class="col-md-4 col-lg-3">
+        <div class="col-md-4 col-lg-3 mb-5 mb-md-0">
           <div class="widget">
             <h4 class="widget-title  mb-3 fs-5 fw-bold">Get in Touch</h4>
-            <address class="pe-xl-15 pe-xxl-17 text-muted">Moonshine St. 14/05 <br class="d-none d-md-block"> Light City, London, <br class="d-none d-md-block"> United Kingdom</address>
-            <a href="#" class=" text-muted">info@email.com</a><span class=" text-muted"><br /> +00 (123) 456 78 90</span>
+            <address class="pe-xl-15 pe-xxl-17 text-muted" style="line-height: 2;">Moonshine St. 14/05 <br class="d-none d-md-block"> Light City, London, <br class="d-none d-md-block"> United Kingdom</address>
+            <a href="#" class=" text-muted" style="line-height: 2;">info@email.com</a><span class=" text-muted"style="line-height: 2;"><br /> +00 (123) 456 78 90</span>
           </div>
         </div>
-        <div class="col-md-4 col-lg-3">
+        <div class="col-md-4 col-lg-3 mb-5 mb-md-0">
           <div class="widget">
             <h4 class="widget-title  mb-3 fs-5 fw-bold">Learn More</h4>
             <ul class="list-unstyled text-reset mb-0 ">
-              <li><a href="#" class="text-muted">About Us</a></li>
-              <li><a href="#" class="text-muted">Our Story</a></li>
-              <li><a href="#" class="text-muted">Projects</a></li>
-              <li><a href="#" class="text-muted">Terms of Use</a></li>
-              <li><a href="#" class="text-muted">Privacy Policy</a></li>
+              <li><a href="#" class="text-muted"style="line-height: 2;">About Us</a></li>
+              <li><a href="#" class="text-muted"style="line-height: 2;">Our Story</a></li>
+              <li><a href="#" class="text-muted"style="line-height: 2;">Projects</a></li>
+              <li><a href="#" class="text-muted"style="line-height: 2;">Terms of Use</a></li>
+              <li><a href="#" class="text-muted"style="line-height: 2;">Privacy Policy</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-md-12 col-lg-3">
+        <div class="col-md-12 col-lg-3 ">
           <div class="widget">
-            <h4 class="widget-title  mb-3 fs-5 fw-bold">Our Newsletter</h4>
-            <p class="mb-5 text-muted">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+            <h4 class="widget-title  mb-3 fs-5 fw-bold" style="line-height: 2;">Our Newsletter</h4>
+            <p class="text-muted" style="line-height: 2;">Subscribe to our newsletter to get our news & deals delivered to you.</p>
             <div class="newsletter-wrapper">
-              
-                <div class="form-floating mb-3 flex">
-                    <div id="mc_embed_signup_scroll2">
-                        <div class="mc-field-group input-group form-floating">
-                          <input type="email" value="" name="EMAIL" class="required email form-control " placeholder="Email Address" id="mce-EMAIL2">
-                          <label for="mce-EMAIL2" class="text-muted fs-8 ">Email Address</label>
-                          <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe2" class="btn btn-primary fs-5 fw-bold text-white">
-                        </div>
-                  </div>
+                <div class="input-group">
+                    <input type="text" class="form-control br py-3 px-4 border-0 shadow-sm" placeholder="Email Address"  aria-describedby="button-addon2">
+                    <button class="btn btn-primary text-white fs-6 px-4 py-3 br fw-bold text-white" type="button" id="button-addon2">Join</button>
+                </div>              
 
             </div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+    </div>
+    </footer>
+
+
 
 
 
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>    
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script> 
+    <script src="./node_modules//bootstrap/dist/js/bootstrap.bundle.min.js"></script>   
     <script src="./owl_3/owl.carousel.min.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
@@ -677,6 +889,41 @@
                 }
             },
         })
+        $('.team-carousel').owlCarousel({
+            loop: false,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            margin:10,
+            nav:false,
+            margin: 43,
+            responsiveClass:true,                     
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,                   
+                },
+                768: {
+                    items: 3,                   
+                }
+            },
+        })
+    </script>  
+    <script>
+        $("#side_opener").click(function(){
+            $("#sidebar").toggleClass("active");
+        })        
+        $("#close").click(function(){
+            $("#sidebar").removeClass("active");
+        })        
+    </script> 
+    <script>
+        $(".sidebar a").each(function(){
+            $(this).click(function(){
+                $("#"+$(this).data("id")).toggleClass("active");
+            })
+        })        
     </script>
 </body>
 </html>

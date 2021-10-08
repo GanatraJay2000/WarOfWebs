@@ -40,6 +40,11 @@
   align-items: center !important;
   height: 20px !important; }
 
+@media (max-width: 992px) {
+  .owl-dots {
+    transform: translateX(-50%);
+    margin-bottom: 150px; } }
+
 .owl-dot {
   outline: 0 !important;
   border: 0 !important;
@@ -73,6 +78,9 @@
   pointer-events: none;
   color: #343f52; }
 
+.team .owl-nav {
+  top: 30%; }
+
 .owl-prev, .owl-next {
   position: absolute;
   pointer-events: all;
@@ -92,3 +100,9 @@
 .owl-prev:hover, .owl-next:hover {
   background-color: #ffffff !important;
   color: #343f52 !important; }
+
+.team .item::after {
+  display: none !important; }
+
+.team .item img {
+  border-radius: 50%; }
