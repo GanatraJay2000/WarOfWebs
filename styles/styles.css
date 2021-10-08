@@ -8130,3 +8130,26 @@ body {
       transform: translate(-32px, -29px);
       top: 0;
       left: 0; }
+
+.blue-button {
+  border-radius: 50%;
+  background-color: #3F78E0;
+  height: 60px;
+  width: 60px;
+  box-shadow: none !important; }
+
+.blue-button2 {
+  border-radius: 50%;
+  background-color: #3F78E0;
+  height: 40px;
+  width: 40px;
+  box-shadow: none !important; }
+
+.banner-img {
+  border-radius: 2%; }
+
+.ul, .li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }

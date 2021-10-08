@@ -263,23 +263,37 @@ body{
                 transform: translate(-32px, -29px);
                 top:0;
                 left:0;
-            }
-            // &::after{
-            //     content:'';
-            //     display: block;
-            //     position: absolute;
-            //     z-index: -1;
-            //     bottom:0;
-            //     right:0;
-            //     background: $soft;
-            //     height: 90%;
-            //     width: 90%;
-            //     transform: translate(35px, 35px);
-            //     @include br;
-            // }
+            }           
         }
     }
 }
 
 
 
+.blue-button{
+    border-radius: 50%;
+    background-color: $color;
+    height: 60px ;
+    width: 60px;
+    box-shadow: none !important;
+}
+
+.blue-button2{
+    border-radius: 50%;
+    background-color: $color;
+    height: 40px ;
+    width: 40px;
+    box-shadow: none !important;
+}
+
+.banner-img{
+    border-radius: 2%;
+}
+
+.ul, .li{
+    list-style-type:none ;
+}
+
+a {
+    text-decoration:none;
+ }
