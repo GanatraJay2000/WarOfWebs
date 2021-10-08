@@ -1,0 +1,31 @@
+{
+  "name": "warofwebs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch --include-path scss scss -o styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GanatraJay2000/WarOfWebs.git"
+  },
+  "keywords": [
+    "war",
+    "web",
+    "duplicate",
+    "template"
+  ],
+  "author": "Jay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GanatraJay2000/WarOfWebs/issues"
+  },
+  "homepage": "https://github.com/GanatraJay2000/WarOfWebs#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.2",
+    "jquery": "^3.6.0",
+    "node-sass": "^6.0.1"
+  }
+}

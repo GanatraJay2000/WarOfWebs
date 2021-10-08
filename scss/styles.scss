@@ -1,0 +1,89 @@
+@import './variables';
+@import './mixins';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+*:not(i){
+    font-family: "Manrope", sans-serif !important;
+}
+html,body{
+    min-height: 100%;
+}
+body{
+    background: $bg;
+}
+// body *{
+//     transition: 0.25s;
+// }
+.br{@include br}
+.br-lg{@include br-lg}
+.br-xlg{@include br-xlg}
+.br-xxlg{@include br-xxlg}
+
+.text-color{
+    color:$color !important;
+}
+.bg-color{
+    background-color: $color !important;
+}
+.manrope{
+    font-family: "Manrope", sans-serif !important;
+}
+.dmsd{
+    font-family: "DM Serif Display", serif !important;
+}
+.n_link{
+    color:$dark;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 1em;
+    position: relative;    
+    &:hover{
+        color:$primary;
+    }
+}
+
+.dropdown{
+    transition: 0.25s;
+    position: relative;
+    margin: 0;
+    padding: 0;    
+    .opener{        
+        &::after{
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f0dd";
+            display: block;
+            position: absolute;
+            right:-15px;
+            top:40%;
+            transform:translate(0, -50%);
+            color:$color;
+        }
+    }
+    .droplist{            
+        position: absolute;
+        padding-top:10px;
+        opacity: 0;
+        visibility: hidden;                
+        transform: translate(-25%, 0);     
+        ul{
+            padding:20px 30px;
+            background: #fff;    
+            @include sh;   
+            @include br;   
+            list-style: none;            
+            margin: 0;      
+            li:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &:hover{
+        .droplist{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
