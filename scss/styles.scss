@@ -38,17 +38,19 @@ body{
     text-decoration: none;
     font-weight:bold;
     font-size: 1em;
-    position: relative;    
+    position: relative;  
+    white-space: nowrap;  
     &:hover{
         color:$primary;
     }
 }
 
 .dropdown{
+    *{transition: 0.25s;}
+    cursor: pointer;
     transition: 0.25s;
     position: relative;
-    margin: 0;
-    padding: 0;    
+    margin: 0;    
     .opener{        
         &::after{
             font-family: "Font Awesome 5 Free"; 
@@ -56,7 +58,8 @@ body{
             content: "\f0dd";
             display: block;
             position: absolute;
-            right:-15px;
+            right:-14px;
+            padding-left:14px;
             top:40%;
             transform:translate(0, -50%);
             color:$color;
@@ -64,26 +67,132 @@ body{
     }
     .droplist{            
         position: absolute;
-        padding-top:10px;
-        opacity: 0;
-        visibility: hidden;                
-        transform: translate(-25%, 0);     
-        ul{
+        padding-top:25px;
+        opacity: 0 !important;
+        visibility: hidden !important;  
+        pointer-events: none !important;                      
+        .list{
             padding:20px 30px;
             background: #fff;    
-            @include sh;   
+            @include sh-xlg;   
             @include br;   
             list-style: none;            
             margin: 0;      
             li:not(:last-child){
-                margin-bottom: 10px;
+                margin-bottom: 10px;  
+                min-width:135px;                        
             }
+        }
+        .tr{
+            transform: translate(-25%, 0);   
+            li{
+                width: auto !important;
+            }  
         }
     }
     &:hover{
         .droplist{
-            opacity: 1;
-            visibility: visible;
+            opacity: 1 !important;
+            visibility: visible !important;
+            pointer-events: initial !important;
         }
     }
+}
+
+.sub-menu{
+    width: 100%;
+    position: relative;
+    *{transition: 0.25s;}
+    .sub-drop{
+        width: 100%;
+        position: relative;        
+        .sub-opener{
+            display: block;
+            width: 100%;
+            position: relative;
+            &::after{
+                font-family: "Font Awesome 5 Free"; 
+                font-weight: 900; 
+                content: "\f0da";                
+                position: absolute;
+                top:60%;
+                right:-10px;
+                padding-left: 10px;
+                transform: translateY(-50%);
+            }
+        }
+        .sub-droplist{
+            background: #fff;    
+            position: absolute;
+            @include sh-lg;   
+            @include br;  
+            top:4px;
+            right:-232px;
+            opacity: 0;
+            visibility: hidden;
+            .sub-list{
+                padding:25px 30px;
+                list-style: none;
+            }
+        }        
+        &:hover{
+            .sub-droplist{
+                top:0;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+.blogs {
+    .sub-droplist{
+        right:-267px !important;
+    }
+}
+
+.mega-nav{    
+    .mega-dropdown{
+        .droplist{
+            z-index: -1;
+            opacity: 0;
+            visibility: hidden;
+            position: fixed;
+            left:6%;
+            width:86%;
+            padding-top: 30px;
+            transform: translate(0%, 4px);
+            transition: 0.25s;
+        }
+        &:hover{
+            .droplist{
+                z-index: 1;
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0%, 0);
+            }
+        }
+    }
+}
+
+.demos{
+    img{
+        transform: translateY(0);
+        &:hover{
+            transform: translateY(-.4rem);
+        }
+    }
+}
+
+.doc_columns{
+    list-style: none;
+    column-count: 2;
+}
+.doc_columns_3{
+    list-style: none;
+    column-count: 3;
+}
+
+.block{
+    background:#ffffff11;
+    &:hover{background:#ffffff22}    
 }

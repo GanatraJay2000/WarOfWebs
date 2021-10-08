@@ -1,6 +1,6 @@
-@mixin sh(){box-shadow: 1px 3px 5px rgba(0,0,0,0.1)}
-@mixin sh-lg(){box-shadow: 2px 4px 6px rgba(0,0,0,0.1)}
-@mixin sh-xlg(){box-shadow: 2px 4px 10px rgba(0,0,0,0.1)}
+@mixin sh(){box-shadow: 0px 0px 5px rgba(0,0,0,0.05)}
+@mixin sh-lg(){box-shadow: 0px 0px 6px rgba(0,0,0,0.05)}
+@mixin sh-xlg(){box-shadow: 0px 0px 10px rgba(0,0,0,0.05)}
 @mixin br-sm(){border-radius: 0.5em}
 @mixin br(){border-radius: 0.5em}
 @mixin br-lg(){border-radius: 1em}
