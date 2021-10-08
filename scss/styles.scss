@@ -35,6 +35,12 @@ body{
 .bg-color{
     background-color: $color !important;
 }
+.text-grey{
+    color:$grey;
+}
+.bg-grey{
+    color:$grey;
+}
 .manrope{
     font-family: "Manrope", sans-serif !important;
 }
@@ -267,6 +273,26 @@ body{
         }
     }
 }
+.imge-container{
+    position: relative;
+    img{
+        width: 100%;
+    }
+    &::before{
+        content:"";
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 150px;
+        background-image: url('/RESOURCES/line_circle.png');
+        background-repeat:no-repeat;
+        background-size: contain;
+        z-index: 1;
+        transform: translate(-32px, -29px);
+        top:0;
+        left:0;
+    }
+}
 
 
 
@@ -297,3 +323,30 @@ body{
 a {
     text-decoration:none;
  }
+
+
+.icon-list {
+    list-style: none;
+    column-count: 2;
+    li{
+        position: relative;
+        padding-left:20px;
+        &::before{
+            position: absolute;
+            left:-10px;
+            top:10px;
+            content: "\f00c";            
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;             
+            height:20px;
+            width:20px;
+            color:$primary;
+            font-size: 10px;
+            background-color:$color-l;
+            border-radius: 50% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
