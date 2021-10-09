@@ -3,7 +3,8 @@
     position: fixed;
     top:0;
     left:0;
-    min-height:100vh;
+    bottom: 45px; /* added */
+    min-height: 100vh !important; /* added */
     width:85vw;
     background-color: #1E2228;
     color:white;
@@ -11,6 +12,7 @@
     transform: translateX(-100%);
     transition: 0.25s ease-in-out;
     font-weight: bold;
+    overflow-y: scroll !important;
     .close{
         float: right;
         font-size: 35px;
