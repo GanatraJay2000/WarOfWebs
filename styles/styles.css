@@ -8250,7 +8250,7 @@ a {
       font-weight: 900;
       height: 20px;
       width: 20px;
-      color: #7F97C5;
+      color: #63789e;
       font-size: 10px;
       border-radius: 50% !important;
       display: flex;
@@ -8313,3 +8313,46 @@ a {
   .icon-list {
     column-count: 1 !important;
     padding: 10px; } }
+
+.learn-more {
+  display: inline-block;
+  position: relative;
+  color: #0087ca; }
+  .learn-more::before {
+    position: absolute;
+    right: -10px;
+    display: inline-block;
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; }
+
+.learn-more:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out; }
+
+.learn-more:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+.goToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  height: 44px;
+  width: 44px;
+  background: transparent;
+  border: 1.5px solid #3F78E0;
+  color: #3F78E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 15px; }
